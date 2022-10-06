@@ -1,0 +1,37 @@
+.container{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.break{
+
+    width: 100%;
+}
+.box{
+    height: 4rem;
+    border: 1px solid orange;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    background: brown;
+}
+.resultBox{
+    background: yellowgreen;
+    height: 4rem;
+    font-size: 50px;
+    flex: 1;
+    display: flex;
+    justify-content: right ;
+    align-items: center;
+
+}
+.op{
+    background: lime;
+}
+.clear{
+    background: black;
+}

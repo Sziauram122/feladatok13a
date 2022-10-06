@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            text-align: center;
+            margin: 0 auto;
+            width: 60%;
+            border: 5px solid black;
+            padding: 10px;
+            align-content: center;
+
+            font-size: 26pt;
+            font-weight: bold;
+            border: 1px solid black;
+            
+            box-sizing: content-box;
+            width: 250px;
+            height: 300px;
+            box-shadow: 20px 20px 10px grey;
+
+        }
+        .gomb{
+
+        }
+        .div{
+            align-items: center;
+        }
+        .gombb{
+        
+        }
+    </style>
+</head>
+<body> 
+    <div class="box">
+        Jó vagy fejszámolásban?
+        <div class="szam1"></div> <div>+</div> <div class="szam2"></div>
+        <input type="number">
+    <button class="ell" onclick="handleClick()">Ellenörzés</button>
+
+    </div>
+    <script>
+        function rand(a){
+            return Math.floor(Math.random()*a)
+        }
+
+    let v=rand(100)
+    console.log(v)
+    let ve=rand(100)
+        console.log(ve)
+        //tomb
+
+        let vTomb=[]
+        for(let i=1;i<=2;i++){
+            vTomb.push(rand(100))
+        }
+        console.log(vTomb)
+        
+
+        let osszeg = 0
+        for(let szam of vTomb){
+            osszeg+=szam
+        }
+        console.log(osszeg)
+
+        document.querySelector('.szam1').innerHTML=vTomb[0]
+        document.querySelector('.szam2').innerHTML=vTomb[1]
+
+
+
+
+
+        function handleClick()  {
+            const num = document.querySelector("input").valueAsNumber
+            console.log(num)
+            if(num == osszeg){
+                console.log('jo')
+
+            }else{
+                console.log('nem annyira')
+            }
+        }
+        
+        
+        
+    </script>
+
+   
+    
+</body>
+</html>
