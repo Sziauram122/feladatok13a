@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kép</title>
+</head>
+<body>
+    <div class="row">
+    <img src="yobammarere.jpg" class="img-fluid h-75" alt="web">
+</div>
+    <div class="row">
+        <p class="bg-light p3 border" onmouseover="csere()">Segítség</p>
+    </div>
+    <script>
+        function csere(){
+            console.log("az egér a szöveg fölött van")
+            document.querySelector('img').src="letöltés (1).jfif"
+            document.querySelector('img').src="yobammarere.jpg"
+        }
+    </script>
+</body>
+</html>

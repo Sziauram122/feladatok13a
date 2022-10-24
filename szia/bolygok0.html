@@ -23,11 +23,12 @@
         color: white;
       }
       img{
-        width: 200px;
-        height: 200px;
+        align-items: center;
+        width: 280px;
+        height: 280px;
       }
       .col-md-3{
-        border: 2px solid white;
+        border: 1px solid white;
       }
       body{
         background-color: grey;
@@ -36,54 +37,60 @@
   <h1 >A Naprendszer bolygói</h1>
   <div class="container">
     <div class="row">
-      <div class="col-md-39">
-        <img  src="merkur.jpg" alt="" class="img-thumpnail h-75">
+      <div class="col-md-3 border">
+        <img onclick="show(this)" src="merkur.jpg" alt="" class="img-fluid h-75">
         <hr>
         <h3>Merkúr</h3> 
       </div>
 
-      <div class="col-md-3">
-        <img src="venusz.jpg" alt="" class="img-thumpnail h-75">
+      <div class="col-md-3 border">
+        <img onclick="show(this)" src="venusz.jpg" alt="" class="img-fluid h-75">
         <hr>
         <h3>Vénusz étolaj</h3>
       </div>
 
-      <div class="col-md-3">
-        <img  src="fold.jpg" alt="" class="img-thumpnail h-75">
+      <div class="col-md-3 border">
+        <img onclick="show(this)" src="fold.jpg" alt="" class="img-fluid h-75">
         <hr>
-        <h3>Föld</h3>
+        <h3>Föl d</h3>
       </div>
 
-      <div class="col-md-3">
-        <img  src="mars.jpg" alt="" class="img-thumpnail h-75 ">
+      <div class="col-md-3 border">
+        <img onclick="show(this)" src="mars.jpg" alt="" class="img-fluid h-75 ">
         <hr>
         <h3>Mars</h3>
      </div>
     </div>
     <div class="row">
-     <div class="col-md-3">
-        <img src="jupiter.jpg" alt="" class="img-thumpnail h-75">
+     <div class="col-md-3 border">
+        <img onclick="show(this)" src="jupiter.jpg" alt="" class="img-fluid h-75">
         <hr>
         <h3>Jupiter</h3>
       </div>
 
       <div class="col-md-3">
-        <img   src="saturn.jpg" alt="" class="img-thumpnail h-75">
+        <img  onclick="show(this)" src="saturn.jpg" alt="" class="img-fluid h-75">
         <hr>
         <h3>Szaturnusz</h3>
       </div>
       <div class="col-md-3">
-        <img src="uranus.jpg" alt="" class="img-thumpnail h-75" >
+        <img onclick="show(this)" src="uranus.jpg" alt="" class="img-fluid h-75" >
         <hr>
         <h3">Uránusz</h3>
       </div>
 
       <div class="col-md-3">
-        <img src="neptun.jpg" alt="" class="img-thumpnail h-75">
+        <img onclick="show(this)" src="neptun.jpg" alt="" class="img-fluid h-75">
         <hr>
         <h3>Neptunusz</h3>
       </div>
     </div>
   </div>
+  <script>
+    function show(obj){
+      console.log(obj.src)
+      window.open(obj.src,'_blank')
+    }
+  </script>
 </body>
 </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Számológép</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        input{
+            margin: 10px 10px 10px 10px ;
+        }
+        .muvelet{
+            background-color: blue;;
+        }
+        .conatiner{
+            border: blue, solid, 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h4>Egyszerű számológép</h4>
+        </div>
+        <div class="row">
+            <input type="text" name="" id="box1" size="15">
+        </div>
+        <div class="row">
+            <input type="text" name="" id="box2" size="15">
+        </div>
+        <div class="row">
+            <input type="text" name="" id="eredmeny" size="15" disabled>
+        </div>
+        <div class="row">
+            <input class="textbox" type="button" name="" id="ossz" value="+" onclick="ossz()">
+            <input class="textbox" type="button" name="" id="kivon" value="-" onclick="kivon()">
+            <input class="textbox" type="button" name="" id="oszt" value="/" onclick="oszt()">
+            <input class="textbox" type="button" name="" id="szor" value="*" onclick="szor()">
+        </div>
+</div>
+    <script>
+        function ossz(){
+            let eredmeny1=Number(document.getElementById('box1').value) + Number(document.getElementById('box2').value)
+            document.querySelector('.eredmeny1').innerHTML=`Az összeadás eredménye: ${ossz}`
+        
+        }
+        function kivon(){
+            let eredmeny2=Number(document.getElementById('box1').value) - Number(document.getElementById('box2').value)
+            document.querySelector('.eredmeny1').innerHTML=`A kivonás eredménye: ${kivon}` 
+        }
+        function oszt(){
+            let eredmeny3=Number(document.getElementById('box1').value) / Number(document.getElementById('box2').value)
+            document.querySelector('.eredmeny1').innerHTML=`Az osztás eredménye: ${oszt}` 
+        }
+        function szor(){
+            let eredmeny4=Number(document.getElementById('box1').value) * Number(document.getElementById('box2').value)
+            document.querySelector('.eredmeny1').innerHTML=`A szorzás eredménye: ${szor}` 
+        }
+        
+        </script>
+
+</body>
+</html>
