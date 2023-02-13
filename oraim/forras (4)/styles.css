@@ -1,0 +1,78 @@
+body {
+  background-color: rgb(111, 111, 111);
+  background-size: cover;
+  background-image: url(TypeScriptBack.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+p {
+  margin: 5px;
+  text-indent: 20px;
+  text-align: justify;
+  line-height: 120%;
+  text-indent: 0px;
+}
+
+#content {
+  margin: 40px auto 20px auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 30px;
+  width: 80%;
+  padding: 30px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #087ac8;
+}
+
+#picture {
+  float: right;
+  height: 257px;
+}
+
+h1 {
+  font-variant: small-caps;
+  font-style: italic;
+}
+
+li {
+  margin-left: 15px;
+  list-style-type: square;
+}
+
+table {
+  width: 80%;
+  margin: auto;
+  border: gray 1px solid;
+  text-align: center;
+  vertical-align: center;
+}
+
+td{
+  border: gray 1px solid;
+  padding: 5px;
+}
+
+.szavak{
+  color: #087ac8;
+  font-weight: bold;
+}
+
+#szamok{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+th{
+  background-color: #087ac8;
+  color: white;
+}
