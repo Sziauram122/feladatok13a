@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>  
+<html lang="hu">
+<head>
+    <link rel="stylesheet" type="text/css" href="rendelesek.css">
+<title>oldal címszöveg</title>
+<meta charset="utf-8">
+    <script src="rendelesek.js"></script>
+</head>
+<body onload="szamitas();">
+    <form name="rendelesek">
+<table>
+    <tr class="kiemeles">
+    <td colspan="2">Termék neve</td>
+        <td>Mennyiség</td>
+        <td>Nettó egységár</td>
+        <td>Áfa %</td>
+        <td>Bruttó ár</td>
+    </tr>
+     <tr>
+    <td><img src="polo.png" alt="poló" title="poló"></td>
+        <td>Poló L-es</td>
+        <td><input type="number" id="dbl" value="2" onchange="szamitas()"> db</td>
+        <td><input type="number" disabled id="arl" value="1495"> Ft</td>
+        <td><input type="number" disabled id="afal" value="27"> %</td>
+        <td><input type="number" disabled id="bruttol"> Ft</td>
+    </tr>
+    <tr>
+    <td><img src="polo.png" alt="poló" title="poló"></td>
+        <td>Poló S-es</td>
+        <td><input type="number" id="dbs" value="2" onchange="szamitas()"> db</td>
+        <td><input type="number" disabled id="ars" value="1495"> Ft</td>
+        <td><input type="number" disabled id="afas" value="27"> %</td>
+        <td><input type="number" disabled id="bruttos"> Ft</td>
+    </tr>
+    <tr>
+    <td><img src="bogre.png" alt="bögre" title="bögre"></td>
+        <td>Bögre</td>
+        <td><input type="number" id="dbb" value="1" onchange="szamitas()"> db</td>
+        <td><input type="number" disabled id="arb" value="1567"> Ft</td>
+        <td><input type="number" disabled id="afab" value="27"> %</td>
+        <td><input type="number" disabled id="bruttob"> Ft</td>
+    </tr>
+     <tr>
+    <td><img src="sapka.png" alt="sapka" title="sapka"></td>
+        <td>Baseball sapka</td>
+        <td><input type="number" id="dbbs" value="1" onchange="szamitas()"> db</td>
+        <td><input type="number" disabled id="arbs" value="3142"> Ft</td>
+        <td><input type="number" disabled id="afabs" value="27"> %</td>
+        <td><input type="number" disabled id="bruttobs"> Ft</td>
+    </tr>
+    <tr class="kiemeles">
+    <td class="jobbra" colspan="3">Összesen:</td>
+        <td  colspan="3"><input type="number" disabled id="bruttoossz"> Ft</td>
+    </tr>
+</table>
+    </form>
+</body>
+</html>
